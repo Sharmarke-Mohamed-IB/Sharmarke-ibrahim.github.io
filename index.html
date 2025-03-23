@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Jokes Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ultimate Joke Generator</title>
+  <!-- Custom Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Particles.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>😂 Random Jokes Generator</h1>
-        <p id="joke">Click the button to get a joke!</p>
-        <button onclick="getJoke()">Get Joke</button>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+  
+  <div class="container">
+    <h1>😂 Ultimate Joke Generator</h1>
+    <div id="joke-container">
+      <p id="joke">Click the button to get a joke!</p>
+      <div id="loading" class="loading">Loading...</div>
     </div>
-    
-    <script src="script.js"></script>
+    <div class="buttons">
+      <button onclick="getJoke()">Get Joke</button>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+      <button onclick="saveJoke()">Save Joke</button>
+    </div>
+  </div>
+  
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
